@@ -26,9 +26,9 @@ ModuleNotFoundError: No module named 'compute_highest_affinity'
 Name                                          Stmts   Miss  Cover
 -----------------------------------------------------------------
 affinityJenkins/__init__.py                       0      0   100%
-affinityJenkins/compute_highest_affinity.py      17      0   100%
+affinityJenkins/compute_highest_affinity.py      20      3    85%
 -----------------------------------------------------------------
-TOTAL                                            17      0   100%
+TOTAL                                            20      3    85%
 ----------------------------------------------------------------------
 Ran 1 test in 0.001s
 
