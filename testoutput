@@ -1,4 +1,28 @@
-.
+E
+======================================================================
+ERROR: Failure: ModuleNotFoundError (No module named 'compute_highest_affinity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
+    raise self.exc_val.with_traceback(self.tb)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/Ron/Desktop/affinityJenkins/tests/controlled_tests.py", line 2, in <module>
+    import compute_highest_affinity as compute_highest_affinity
+ModuleNotFoundError: No module named 'compute_highest_affinity'
+
 Name                                          Stmts   Miss  Cover
 -----------------------------------------------------------------
 affinityJenkins/__init__.py                       0      0   100%
@@ -8,4 +32,4 @@ TOTAL                                            17      0   100%
 ----------------------------------------------------------------------
 Ran 1 test in 0.001s
 
-OK
+FAILED (errors=1)
