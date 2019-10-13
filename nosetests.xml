@@ -1,2 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="0" failures="0" skip="0"><testcase classname="affinityJenkins.tests.controlled_tests.ControlledTests" name="test1" time="0.000"><system-out><![CDATA[This line is never reached
-]]></system-out></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="1" failures="0" skip="0"><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="builtins.ModuleNotFoundError" message="No module named 'compute_highest_affinity'"><![CDATA[Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 628, in run
+    testMethod()
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
+    raise self.exc_val.with_traceback(self.tb)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/Users/Ron/Desktop/ContinuousIntegrationCode/venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/Ron/Desktop/affinityJenkins/tests/controlled_tests.py", line 2, in <module>
+    import compute_highest_affinity as compute_highest_affinity
+ModuleNotFoundError: No module named 'compute_highest_affinity'
+]]></error></testcase></testsuite>

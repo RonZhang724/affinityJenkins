@@ -29,7 +29,7 @@ def highest_affinity(site_list, user_list, time_list):
                     affinities[pair] = 0
                 affinities[pair] += 1
 
-    never_reachable = True
+    never_reachable = False
     if never_reachable:
         print("This line is never reached")
         
